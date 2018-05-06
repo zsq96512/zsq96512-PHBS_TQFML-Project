@@ -1,18 +1,25 @@
-#Forcasting JPY/USD Exchange Rate
+# Forcasting JPY/USD Exchange Rate
 
-##1.Background Introduction
+## Team Member
+* Shiqi Zhang 1701213153
+* Haoli Wan 1701213095
 
-##2.Motivation
+## 1.Background Introduction
+1.1 Structural models, using Macro factors to predict exchange rate, are usually easily beat by random walk model. <br>
+1.2 Time series models, such as ARMA,ARIMA,ARCH,GARCH were frequently used by predictors in the past.
 
-##3.Goal
 
-##4.Datasource
+## 2.Motivation
 
-##5.Work
-###5.1 Data Preprocessing
-###5.2 Support Vector Regression
-###5.3 Artifial Neutral Work
+## 3.Goal
 
-##6.Result & Analysis
+## 4.Datasource
 
-##References
+## 5.Work
+### 5.1 Data Preprocessing
+### 5.2 Support Vector Regression
+### 5.3 Artifial Neutral Work
+
+## 6.Result & Analysis
+
+## References
