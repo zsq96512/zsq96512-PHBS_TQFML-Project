@@ -18,7 +18,7 @@
 ## 5.Work
 ### 5.1 Data Preprocessing
 ### 5.2 Support Vector Regression
-### 5.3 Artifial Neutral Work[`code`](https://github.com/zsq96512/zsq96512-PHBS_TQFML-Project/blob/master/Neural%20Network%20Method.ipynb_)
+### 5.3 Artifial Neutral Work[`code`](https://github.com/zsq96512/zsq96512-PHBS_TQFML-Project/blob/master/Neural%20Network%20Method.ipynb)
 #### 5.3.1 Input and output variables
 This project left out the variables of the last 7 periods as the test set, and the rest  was the training set, both the training set and test set were nomalized by the min_max method to fasten the training process.
 #### 5.3.2 Construction oF ANN
