@@ -5,7 +5,7 @@
 * Haoli Wan 1701213095
 
 ## 1.Background Introduction
-* Structural models, using Macro factors to predict exchange rate, are usually easily beat by random walk model. <br>
+* Structural models, using Macro factors to predict exchange rate, are easily beat by random walk model. <br>
 * Time series models, such as ARMA,ARIMA,ARCH,GARCH were frequently used by predictors.<br>
 * In recent years, ANN, SVM and chaos theory are widely used in predicit exchange rate.<br>
 
@@ -14,8 +14,8 @@
 Focused on the short-term voltility of the foreign exchange rate, this project apply the SVR method and the deep learning method ANN to predict the exchange rates of next 7 periods.
 
 ## 3.Goal
-Our main goal is to use daily exchange rate data (from 2016-01-04 to 2018-03-30) to forecast exchange rate in next seven days (2018-03-30 to 2018-04-10).<br>
-Main methods used to determine the length of prediction methods is `chaos theory` and `lyapunov exponents`. Using wolf methods and choosing parameters according to experience, we calculate the maximum lyapunov exponents is L=0.14. The maximum lyapunov exponents is above zero can prove that the exchange rate time series has chaotic characteristics. Also, 1/L=7.1428 means that the `maximum time scale that the series system can forecast is 7 days.`<br>
+Our main goal is to use daily exchange rate data to forecast exchange rate in next seven days.<br>
+Main methods used to determine the length of prediction methods is `chaos theory` and `lyapunov exponents`. Using wolf methods and choosing parameters according to experience, we calculate `the maximum lyapunov exponents is L=0.1407` (data=JPY/USD(2016.01.04-2018.04.10),N=592,m=10,tau=60,P=15). The maximum lyapunov exponents is above zero which can prove that the exchange rate time series has chaotic characteristics. Also, 1/L=7.1073 means that the `maximum time scale that the series system can forecast is 7 days.`<br>
 For we didn't find suitable code to calculate lyapunov exponents in python, we use [code](https://github.com/zsq96512/zsq96512-PHBS_TQFML-Project/tree/master/Lyapunov%20index%3B%20wolf%20methods) that can be conducted in MATLAB to calculate lyapunov exponents.
 
 
@@ -24,11 +24,10 @@ This project collected the daily data of the exchange rate of JPY/USD (592 sampl
 
 ## 5.Work
 ### 5.1 [Data Preprocessing](https://github.com/zsq96512/zsq96512-PHBS_TQFML-Project/blob/master/Data%20Preprocessing.ipynb)
-* Only using data starting from 2016, total 592 datas.<br>
 * Difference the data, draw the graph.<br>
 ### 5.2 [Support Vector Regression](https://github.com/zsq96512/zsq96512-PHBS_TQFML-Project/blob/master/SVR%20Method.ipynb)
-* Belongs to support vector machine methods; use for regression.<br>
-* Using five lagged period exchange rate as dependent variable.
+* Belongs to support vector machine methods
+* Using five lagged exchange rate as dependent variable.
 * Three different kernels considered: linear, polynomial(poly), Radial Basis Function(rbf).<br>
 * Five error index measure: Mean squared error(MSE), Mean absolute error(MAE), Root mean absolute error(RMSE), Mean absolute error(MAPE), goodness of fit(U=1-MAPE).
 * Grid search to find best parameters.<br>
@@ -44,8 +43,8 @@ This project collected the daily data of the exchange rate of JPY/USD (592 sampl
 ## 6.[Result & Analysis](https://github.com/zsq96512/zsq96512-PHBS_TQFML-Project/blob/master/Conclusion%20%26%20Analysis.ipynb)
 * Support Vector Machines performs better than Artifial Neutral Network. There are several explanations for this result.<br>
 (1)ANN tends to overfit the training set; <br>
-(2)For ANN it is difficult to control all the larage number of parameters;<br>
-(3)For ANN it is difficult to obtain a stablt solution.
+(2)For ANN it is difficult to control all the large number of parameters;<br>
+(3)For ANN it is difficult to obtain a stable solution.
 
 ## References
 
