@@ -5,16 +5,16 @@
 * Haoli Wan 1701213095
 
 ## 1.Background Introduction
-1.1 Structural models, using Macro factors to predict exchange rate, are easily beat by random walk model. <br>
-1.2 Time series models, such as ARMA,ARIMA,ARCH,GARCH were frequently used by predictors.<br>
-1.3 In recent years, new methods such as ANN, SVM, chaos theory has been used to predict exchange rate.
+1.1 Structural models, using Macro factors to predict exchange rate, are usually easily beat by random walk model. <br>
+1.2 Time series models, such as ARMA,ARIMA,ARCH,GARCH were frequently used by predictors in the past.
 
 
 ## 2.Motivation
+Since 70s twentieth Century, the floating exchange rate system is dominant in the world. The high profit and high risk of foreign exchange investment have determined that only the long-term and short-term volatility of the market can be held in an invincible position. As the basis of foreign exchange risk management, it's of great significance to forecast the directions and the degree of the change of foreign exchange rate.
+
+Focused on the short-term voltility of the foreign exchange rate, this project apply the SVR method and the deep learning method ANN to predict the exchange rates of next 7 periods.
 
 ## 3.Goal
-* Our main goal is to predict JPY/USD bilateral exchange rate in certain period which is seven-day long.<br>
-
 
 ## 4.Datasource
 
@@ -42,55 +42,54 @@ To evaluate the performance of ANN method, this project selected several index i
 | 3.00945  | 17.468607| 1.734777 | 0.028269 | 0.971731|
 
 #### 5.3.4 Result
-We can compare the predicted exchange rates from March 3oth, 2018 to April 10th, 2018 with the true exchange rates from two espects, the values and the direction of changes between two periods, and the result is shown below.
+We can compare the predicted exchange rates from April 2nd, 2018 to April 10th, 2018 with the true exchange rates from two espects, the values and the direction of changes between two periods, and the result is shown below.
 
-| Date    | True exchange rate | direction of change | Predict result |
+| Date    | True exchange rate | Direction of change | Predict result |
 | :-----: | :-----: | :-----: | :-----: |
-| 3.00945  | 17.468607| 1.734777 | 0.028269 | 0.971731|
-| 3.00945  | 17.468607| 1.734777 | 0.028269 | 0.971731|
-| 3.00945  | 17.468607| 1.734777 | 0.028269 | 0.971731|
-| 3.00945  | 17.468607| 1.734777 | 0.028269 | 0.971731|
-| 3.00945  | 17.468607| 1.734777 | 0.028269 | 0.971731|
-| 3.00945  | 17.468607| 1.734777 | 0.028269 | 0.971731|
-
-
+| 2018/4/2 | 105.9| / | / |
+| 2018/4/3 | 106.605 | + | + |
+| 2018/4/4 | 106.775| + | + |
+| 2018/4/5 | 107.385| + | + |
+| 2018/4/6 | 106.925| - | - |
+| 2018/4/9 | 106.78 | - | + |
+| 2018/4/10 | 107.195| + | + |
 
 ## 6.Result & Analysis
 
 ## References
 
-[1]Galeshchuk, S. (2016). Neural networks performance in exchange rate prediction. Neurocomputing, 172(C), 446-452.
+Galeshchuk, S. (2016). Neural networks performance in exchange rate prediction. Neurocomputing, 172(C), 446-452.
 
-[2]Ince, H., & Trafalis, T. B. (2007). A hybrid model for exchange rate prediction. Decision Support Systems, 42(2), 1054-1062.
+Ince, H., & Trafalis, T. B. (2007). A hybrid model for exchange rate prediction. Decision Support Systems, 42(2), 1054-1062.
 
-[3]F. E. H. T., & Cao, L. (2007). Application of support vector machines in ÿnancial time series forecasting. Journal of University of Electronic Science & Technology of China, 48(1–4), 847-861.
+∗, F. E. H. T., & Cao, L. (2007). Application of support vector machines in ÿnancial time series forecasting. Journal of University of Electronic Science & Technology of China, 48(1–4), 847-861.
 
-[4]PaoloTenti. (1996). Forecasting foreign exchange rates using recurrent neural networks. Applied Artificial Intelligence, 10(6), 567-582.
+PaoloTenti. (1996). Forecasting foreign exchange rates using recurrent neural networks. Applied Artificial Intelligence, 10(6), 567-582.
 
-[5]Nag, A. K., & Mitra, D. A. (2002). Forecasting daily foreign exchange rates using genetically optimized neural networks. Journal of Forecasting,21(7), 501-511.
+Nag, A. K., & Mitra, D. A. (2002). Forecasting daily foreign exchange rates using genetically optimized neural networks. Journal of Forecasting,21(7), 501-511.
 
-[6]Zhang, G., & Hu, M. Y. (1998). Neural network forecasting of the british pound/us dollar exchange rate. Omega, 26(4), 495-506.
+Zhang, G., & Hu, M. Y. (1998). Neural network forecasting of the british pound/us dollar exchange rate. Omega, 26(4), 495-506.
 
-[7]Ni, H., & Yin, H. (2009). Exchange rate prediction using hybrid neural networks and trading indicators. Neurocomputing, 72(13), 2815-2823.
+Ni, H., & Yin, H. (2009). Exchange rate prediction using hybrid neural networks and trading indicators. Neurocomputing, 72(13), 2815-2823.
 
-[8]Sermpinis, G., Dunis, C., Laws, J., & Stasinakis, C. (2012). Forecasting and trading the eur/usd exchange rate with stochastic neural network combination and time-varying leverage. Decision Support Systems,54(1), 316-329.
+Sermpinis, G., Dunis, C., Laws, J., & Stasinakis, C. (2012). Forecasting and trading the eur/usd exchange rate with stochastic neural network combination and time-varying leverage. Decision Support Systems,54(1), 316-329.
 
-[9]Sermpinis, Georgios, Theofilatos, Konstantinos, Karathanasopoulos, & Andreas, et al. (2013). Forecasting foreign exchange rates with adaptive neural networks using;radial-basis functions and particle swarm optimization. European Journal of Operational Research, 225(3), 528-540.
+Sermpinis, Georgios, Theofilatos, Konstantinos, Karathanasopoulos, & Andreas, et al. (2013). Forecasting foreign exchange rates with adaptive neural networks using;radial-basis functions and particle swarm optimization. European Journal of Operational Research, 225(3), 528-540.
 
-[10]Rout, M., Majhi, B., Majhi, R., & Panda, G. (2014). Forecasting of currency exchange rates using an adaptive arma model with differential evolution based training. Journal of King Saud University - Computer and Information Sciences, 26(1), 7-18.
+Rout, M., Majhi, B., Majhi, R., & Panda, G. (2014). Forecasting of currency exchange rates using an adaptive arma model with differential evolution based training. Journal of King Saud University - Computer and Information Sciences, 26(1), 7-18.
 
-[11]Rehman, M., Khan, G. M., & Mahmud, S. A. (2014). Foreign currency exchange rates prediction using cgp and recurrent neural network ☆. Ieri Procedia, 10, 239-244.
+Rehman, M., Khan, G. M., & Mahmud, S. A. (2014). Foreign currency exchange rates prediction using cgp and recurrent neural network ☆. Ieri Procedia, 10, 239-244.
 
-[12]XIONG, Z. (2011). ARIMA ronghe shenjingwangluo de renminbi huilv yuce moxing yanjiu( Research on Renminbi Exchange Rate Forecasting Model Based on Artificial Neural Network). Quantitative Economic And Technical Economic Research, (6), 64-76.
+XIONG, Z. (2011). ARIMA ronghe shenjingwangluo de renminbi huilv yuce moxing yanjiu( Research on Renminbi Exchange Rate Forecasting Model Based on Artificial Neural Network). Quantitative Economic And Technical Economic Research, (6), 64-76.
 
-[13]C, S. (2007). huilu yuce:yige xinde feicanshu zhichi xiangliang huigui fangfa( Exchange Rate Prediction: A New Nonparametric Support Vector Regression Method). Quantitative Economic And Technical Economic Research, 24(5), 142-150.
+C, S. (2007). huilu yuce:yige xinde feicanshu zhichi xiangliang huigui fangfa( Exchange Rate Prediction: A New Nonparametric Support Vector Regression Method). Quantitative Economic And Technical Economic Research, 24(5), 142-150.
 
-[14]X, C., & O, L. (2008). Huilv yuce de shenjing wangluo fangfa jiqi bijiao( Exchange Rate Prediction Neural Network Method and Comparison). Financial Science, (5), 47-53.
+X, C., & O, L. (2008). Huilv yuce de shenjing wangluo fangfa jiqi bijiao( Exchange Rate Prediction Neural Network Method and Comparison). Financial Science, (5), 47-53.
 
-[15]X, C., H, X., & S, B. (2009). jiyu xiaobo fenxi yu zhichi xiangliangji de renminbi huilv yuce( Prediction of RMB Exchange Rate Based on Wavelet Analysis and Support Vector Machine). Journal Of Xiangtan University, 33(5), 82-87.
+X, C., H, X., & S, B. (2009). jiyu xiaobo fenxi yu zhichi xiangliangji de renminbi huilv yuce( Prediction of RMB Exchange Rate Based on Wavelet Analysis and Support Vector Machine). Journal Of Xiangtan University, 33(5), 82-87.
 
-[16]W, M., & X, Q. (2007). zhichi xiangliangji zai jinrong shijian xulie yuce zhongde yingyong( Application of Support Vector Machine in Financial Time Series Prediction). Journal Of Electronic Science And Technology University(S1), 442-444.
+W, M., & X, Q. (2007). zhichi xiangliangji zai jinrong shijian xulie yuce zhongde yingyong( Application of Support Vector Machine in Financial Time Series Prediction). Journal Of Electronic Science And Technology University(S1), 442-444.
 
-[17]W, J., & M, Y. (2006). jiyu shenjing wangluo de huilv yuce( Neural Network Based Rate Prediction). Computer And Modernization, (2), 105-108.
+W, J., & M, Y. (2006). jiyu shenjing wangluo de huilv yuce( Neural Network Based Rate Prediction). Computer And Modernization, (2), 105-108.
 
-[18]W, X., & W, H. (2006). yichuan suanfa he shenjing wangluo zai huilv yuce zhongde yingyong( Application of Genetic Algorithm and Neural Network in Exchange Rate Prediction）. In China Control and Decision Academic Conference.
+W, X., & W, H. (2006). yichuan suanfa he shenjing wangluo zai huilv yuce zhongde yingyong( Application of Genetic Algorithm and Neural Network in Exchange Rate Prediction）. In China Control and Decision Academic Conference.
