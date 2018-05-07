@@ -39,18 +39,17 @@ To evaluate the performance of ANN method, this project selected several index i
 | 3.00945  | 17.468607| 1.734777 | 0.028269 | 0.971731|
 
 #### 5.3.4 Result
-We can compare the predicted exchange rates from March 3oth, 2018 to April 10th, 2018 with the true exchange rates from two espects, the values and the direction of changes between two periods, and the result is shown below.
+We can compare the predicted exchange rates from April 2nd, 2018 to April 10th, 2018 with the true exchange rates from two espects, the values and the direction of changes between two periods, and the result is shown below.
 
 | Date    | True exchange rate | direction of change | Predict result |
 | :-----: | :-----: | :-----: | :-----: |
-| 3.00945  | 17.468607| 1.734777 | 0.028269 | 0.971731|
-| 3.00945  | 17.468607| 1.734777 | 0.028269 | 0.971731|
-| 3.00945  | 17.468607| 1.734777 | 0.028269 | 0.971731|
-| 3.00945  | 17.468607| 1.734777 | 0.028269 | 0.971731|
-| 3.00945  | 17.468607| 1.734777 | 0.028269 | 0.971731|
-| 3.00945  | 17.468607| 1.734777 | 0.028269 | 0.971731|
-
-
+| 2018/4/2 | 105.9| / | / |
+| 2018/4/3 | 106.605 | + | + |
+| 2018/4/4 | 106.775| + | + |
+| 2018/4/5 | 107.385| + | + |
+| 2018/4/6 | 106.925| - | - |
+| 2018/4/9 | 106.78 | - | + |
+| 2018/4/10 | 107.195| + | + |
 
 ## 6.Result & Analysis
 
