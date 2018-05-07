@@ -18,7 +18,7 @@
 ## 5.Work
 ### 5.1 Data Preprocessing
 ### 5.2 Support Vector Regression
-### 5.3 Artifial Neutral Work[`code`]
+### 5.3 Artifial Neutral Work[`code`](https://github.com/zsq96512/zsq96512-PHBS_TQFML-Project/blob/master/Neural%20Network%20Method.ipynb_)
 #### 5.3.1 Input and output variables
 This project left out the variables of the last 7 periods as the test set, and the rest  was the training set, both the training set and test set were nomalized by the min_max method to fasten the training process.
 #### 5.3.2 Construction oF ANN
@@ -27,7 +27,7 @@ This ANN model has 2 layers and the numbers of neurons are [5, 4, 7], since we h
 Besides, this project apply the backpropagation algorithm to the neutral network, with the activation function to be tanh function.
 
 As for the parameter adjustment process, grid search was used to find the optimal learning rate and the optimal numbers of neurons in the hidden layer, after the empirical formula gave the range of the numbers of neurons in the hidden layer, which is shown below.
-![](PICTURE/L.png)
+![](picture/L.png)
 
 With the initial weight to be randomized, we tried lots of times and store the seed of best randomized initial weights.
 
