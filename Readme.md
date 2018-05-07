@@ -22,13 +22,17 @@
 #### 5.3.1 Input and output variables
 This project left out the variables of the last 7 periods as the test set, and the rest  was the training set, both the training set and test set were nomalized by the min_max method to fasten the training process.
 #### 5.3.2 Construction oF ANN
-This ANN model has 2 layers and the numbers of neurons are [5, 4, 7], since we have 5 lag terms as the input variables (586 samples), and we predict the next 7 periods’ exchange rate, which is our output variables (586 samples). And both the input and output variables are the fluctuations of the exchange rate.
-Next, this project apply the backpropagation algorithm to the neutral network, with the activation function to be tanh function.
-In addition, grid search was also used to adjust parameters including the learning rate  and the numbers of neurons in the hidden layer, after the empirical formula gave the range of the numbers of neurons in the hidden layer.
+This ANN model has 2 layers and the numbers of neurons are [5, 4, 7], since we have 5 lag terms as the input variables (586 samples), and we predict the next 7 periods’ exchange rate, which is our output variables (586 samples). And both the input and output variables are the fluctuations of the exchange rate. 
+
+Besides, this project apply the backpropagation algorithm to the neutral network, with the activation function to be tanh function.
+
+As for the parameter adjustment process, grid search was used to find the optimal learning rate and the optimal numbers of neurons in the hidden layer, after the empirical formula gave the range of the numbers of neurons in the hidden layer, which is shown below.
+![](PICTURE/L.png)
+
 With the initial weight to be randomized, we tried lots of times and store the seed of best randomized initial weights.
 
 ### 5.3.3 Evaluation
-To evaluate the performance of ANN method, this project selected several index including MSE, MAE, RMSE, MAPE , and we choose the MAPE as our target, and U is the accurancy. The result is shown as below.
+To evaluate the performance of ANN method, this project selected several index including MSE, MAE, RMSE, MAPE , and we choose the MAPE as our target, and U is the accurancy. The result is shown below.
 
 
 ## 6.Result & Analysis
