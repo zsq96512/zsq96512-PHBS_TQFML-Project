@@ -32,9 +32,12 @@ As for the parameter adjustment process, grid search was used to find the optima
 With the initial weight to be randomized, we tried lots of times and store the seed of best randomized initial weights.
 
 ### 5.3.3 Evaluation
-To evaluate the performance of ANN method, this project selected several index including MSE, MAE, RMSE, MAPE , and we choose the MAPE as our target, and U is the accurancy. The result is shown below.
+To evaluate the performance of ANN method, this project selected several index including MSE, MAE, RMSE, MAPE , and we choose the MAPE as our target, and U is the accurancy. The result is shown in the table below.
 
-
+| MSE      | MAE      | RMSE     | MAPE     | U       |
+| :-----: | :-----: | :-----: | :-----: | :-----: |
+| 3.00945  | 17.468607| 1.734777 | 0.028269 | 0.971731|
+     
 ## 6.Result & Analysis
 
 ## References
