@@ -31,17 +31,17 @@ This project collected the daily data of the exchange rate of JPY/USD (592 sampl
 * Three different kernels considered: linear, polynomial(poly), Radial Basis Function(rbf).<br>
 * Five error index measure: Mean squared error(MSE), Mean absolute error(MAE), Root mean absolute error(RMSE), Mean absolute error(MAPE), goodness of fit(U=1-MAPE).
 * Grid search to find best parameters.<br>
-### 5.3 [Artifial Neutral Work](https://github.com/zsq96512/zsq96512-PHBS_TQFML-Project/blob/master/Neural%20Network%20Method.ipynb)
+### 5.3 [Artifial Neural Work](https://github.com/zsq96512/zsq96512-PHBS_TQFML-Project/blob/master/Neural%20Network%20Method.ipynb)
 * 5 lag terms as the input variables(586 samples) and the next 7 periods’ exchange rate as output variables.
 * ANN: 2 layers and the numbers of neurons are [5, 4, 7].
-* Apply the backpropagation algorithm to the neutral network, with the activation function to be tanh function.
+* Apply the backpropagation algorithm to the neutal network, with the activation function to be tanh function.
 * grid search was used to find the optimal parameters, including learning rate and the numbers of neurons in the hidden layer, after the empirical formula gave the range of the numbers of neurons in the hidden layer, which is shown below.
 ![](picture/L.png)
 * With the initial weight to be randomized, we tried lots of times and store the seed of best randomized initial weights.
 * Evaluation index:MSE, MAE, RMSE, MAPE and U.
 
 ## 6.[Result & Analysis](https://github.com/zsq96512/zsq96512-PHBS_TQFML-Project/blob/master/Conclusion%20%26%20Analysis.ipynb)
-* Support Vector Machines performs better than Artifial Neutral Network. There are several explanations for this result.<br>
+* Support Vector Machines performs better than Artifial Neutal Network. There are several explanations for this result.<br>
 (1)ANN tends to overfit the training set; <br>
 (2)For ANN it is difficult to control all the large number of parameters;<br>
 (3)For ANN it is difficult to obtain a stable solution.
