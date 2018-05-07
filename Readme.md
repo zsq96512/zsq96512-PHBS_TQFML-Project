@@ -35,10 +35,10 @@ This project collected the daily data of the exchange rate of JPY/USD (592 sampl
 * 5 lag terms as the input variables(586 samples) and the next 7 periods’ exchange rate as output variables.
 * ANN: 2 layers and the numbers of neurons are [5, 4, 7].
 * Apply the backpropagation algorithm to the neutal network, with the activation function to be tanh function.
-* grid search was used to find the optimal parameters, including learning rate and the numbers of neurons in the hidden layer, after the empirical formula gave the range of the numbers of neurons in the hidden layer, which is shown below.
+* Grid search was used to find the optimal parameters, including learning rate and the numbers of neurons in the hidden layer, after the empirical formula gave the range of the numbers of neurons in the hidden layer, which is shown below.
 ![](picture/L.png)
 * With the initial weight to be randomized, we tried lots of times and store the seed of best randomized initial weights.
-* Evaluation index:MSE, MAE, RMSE, MAPE and U.
+* Evaluation index: MSE, MAE, RMSE, MAPE and U.
 
 ## 6.[Result & Analysis](https://github.com/zsq96512/zsq96512-PHBS_TQFML-Project/blob/master/Conclusion%20%26%20Analysis.ipynb)
 * Support Vector Machines performs better than Artifial Neutal Network. There are several explanations for this result.<br>
