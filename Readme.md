@@ -41,7 +41,7 @@ To evaluate the performance of ANN method, this project selected several index i
 #### 5.3.4 Result
 We can compare the predicted exchange rates from April 2nd, 2018 to April 10th, 2018 with the true exchange rates from two espects, the values and the direction of changes between two periods, and the result is shown below.
 
-| Date    | True exchange rate | direction of change | Predict result |
+| Date    | True exchange rate | Direction of change | Predict result |
 | :-----: | :-----: | :-----: | :-----: |
 | 2018/4/2 | 105.9| / | / |
 | 2018/4/3 | 106.605 | + | + |
