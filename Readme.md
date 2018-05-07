@@ -29,7 +29,7 @@ This project collected the daily data of the exchange rate of JPY/USD (592 sampl
 * Belongs to support vector machine methods
 * Using five lagged exchange rate as dependent variable.
 * Three different kernels considered: linear, polynomial(poly), Radial Basis Function(rbf).<br>
-* Five error index measure: Mean squared error(MSE), Mean absolute error(MAE), Root mean absolute error(RMSE), Mean absolute error(MAPE), goodness of fit(U=1-MAPE).
+* Five error index measure: Mean squared error(MSE), Mean absolute error(MAE), Root mean absolute error(RMSE), Mean absolute percentage error(MAPE), goodness of fit(U=1-MAPE).
 * Grid search to find best parameters.<br>
 ### 5.3 [Artifial Neural Netork](https://github.com/zsq96512/zsq96512-PHBS_TQFML-Project/blob/master/Neural%20Network%20Method.ipynb)
 * 5 lag terms as the input variables(586 samples) and the next 7 periods’ exchange rate as output variables.
