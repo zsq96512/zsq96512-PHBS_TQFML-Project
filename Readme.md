@@ -6,7 +6,8 @@
 
 ## 1.Background Introduction
 1.1 Structural models, using Macro factors to predict exchange rate, are usually easily beat by random walk model. <br>
-1.2 Time series models, such as ARMA,ARIMA,ARCH,GARCH were frequently used by predictors in the past.
+1.2 Time series models, such as ARMA,ARIMA,ARCH,GARCH were frequently used by predictors.<br>
+1.3 In recent years, ANN, SVM and chaos theory are widely used in predicit exchange rate.<br>
 
 
 ## 2.Motivation
@@ -15,6 +16,10 @@ Since 70s twentieth Century, the floating exchange rate system is dominant in th
 Focused on the short-term voltility of the foreign exchange rate, this project apply the SVR method and the deep learning method ANN to predict the exchange rates of next 7 periods.
 
 ## 3.Goal
+* Our main goal is to use daily exchange rate data (from 2016-01-04 to 2018-03-30) to forecast exchange rate in next seven days (2018-03-30 to 2018-04-10).<br>
+Main methods used to determine the length of prediction methods is `chaos theory` and `lyapunov exponents`. Using wolf methods and choosing parameters with experience, we calculate the `maximum lyapunov exponents is L=0.14`. The maximum lyapunov exponents is above zero can prove that the exchange rate time series has chaotic characteristics. Also, 1/L=7.1428 means that the `maximum time scale that the series system can forecast is 7 days.`<br>
+For we didn't find suitable code to calculate lyapunov exponents in python, we use [code](https://github.com/zsq96512/zsq96512-PHBS_TQFML-Project/tree/master/Lyapunov%20index%3B%20wolf%20methods) that can be conducted in MATLAB to calculate lyapunov exponents.
+
 
 ## 4.Datasource
 
