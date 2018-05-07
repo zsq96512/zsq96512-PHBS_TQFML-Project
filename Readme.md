@@ -11,7 +11,6 @@
 
 
 ## 2.Motivation
-Since 70s twentieth Century, the floating exchange rate system is dominant in the world. The high profit and high risk of foreign exchange investment have determined that only the long-term and short-term volatility of the market can be held in an invincible position. As the basis of foreign exchange risk management, it's of great significance to forecast the directions and the degree of the change of foreign exchange rate.<br>
 Focused on the short-term voltility of the foreign exchange rate, this project apply the SVR method and the deep learning method ANN to predict the exchange rates of next 7 periods.
 
 ## 3.Goal
@@ -21,6 +20,7 @@ For we didn't find suitable code to calculate lyapunov exponents in python, we u
 
 
 ## 4.Datasource
+This project collected the daily data of the exchange rate of JPY/USD (592 samples) from January 1st, 2016 to April 10th, 2018 in wind economics database. 
 
 ## 5.Work
 ### 5.1 [Data Preprocessing](https://github.com/zsq96512/zsq96512-PHBS_TQFML-Project/blob/master/Data%20Preprocessing.ipynb)
@@ -33,37 +33,13 @@ For we didn't find suitable code to calculate lyapunov exponents in python, we u
 * Five error index measure: Mean squared error(MSE), Mean absolute error(MAE), Root mean absolute error(RMSE), Mean absolute error(MAPE), goodness of fit(U=1-MAPE).
 * Grid search to find best parameters.<br>
 ### 5.3 [Artifial Neutral Work](https://github.com/zsq96512/zsq96512-PHBS_TQFML-Project/blob/master/Neural%20Network%20Method.ipynb)
-#### 5.3.1 Input and output variables
-This project left out the variables of the last 7 periods as the test set, and the rest  was the training set, both the training set and test set were nomalized by the min_max method to fasten the training process.
-#### 5.3.2 Construction oF ANN
-This ANN model has 2 layers and the numbers of neurons are [5, 4, 7], since we have 5 lag terms as the input variables (586 samples), and we predict the next 7 periods’ exchange rate, which is our output variables (586 samples). And both the input and output variables are the fluctuations of the exchange rate. 
-
-Besides, this project apply the backpropagation algorithm to the neutral network, with the activation function to be tanh function.
-
-As for the parameter adjustment process, grid search was used to find the optimal learning rate and the optimal numbers of neurons in the hidden layer, after the empirical formula gave the range of the numbers of neurons in the hidden layer, which is shown below.
+* 5 lag terms as the input variables(586 samples) and the next 7 periods’ exchange rate as output variables.
+* ANN: 2 layers and the numbers of neurons are [5, 4, 7].
+* Apply the backpropagation algorithm to the neutral network, with the activation function to be tanh function.
+* grid search was used to find the optimal parameters, including learning rate and the numbers of neurons in the hidden layer, after the empirical formula gave the range of the numbers of neurons in the hidden layer, which is shown below.
 ![](picture/L.png)
-
-With the initial weight to be randomized, we tried lots of times and store the seed of best randomized initial weights.
-
-### 5.3.3 Evaluation
-To evaluate the performance of ANN method, this project selected several index including MSE, MAE, RMSE, MAPE , and we choose the MAPE as our target, and U is the accurancy. The result is shown in the table below.
-
-| MSE      | MAE      | RMSE     | MAPE     | U       |
-| :-----: | :-----: | :-----: | :-----: | :-----: |
-| 3.00945  | 17.468607| 1.734777 | 0.028269 | 0.971731|
-
-#### 5.3.4 Result
-We can compare the predicted exchange rates from April 2nd, 2018 to April 10th, 2018 with the true exchange rates from two espects, the values and the direction of changes between two periods, and the result is shown below.
-
-| Date    | True exchange rate | Direction of change | Predict result |
-| :-----: | :-----: | :-----: | :-----: |
-| 2018/4/2 | 105.9| / | / |
-| 2018/4/3 | 106.605 | + | + |
-| 2018/4/4 | 106.775| + | + |
-| 2018/4/5 | 107.385| + | + |
-| 2018/4/6 | 106.925| - | - |
-| 2018/4/9 | 106.78 | - | + |
-| 2018/4/10 | 107.195| + | + |
+* With the initial weight to be randomized, we tried lots of times and store the seed of best randomized initial weights.
+* Evaluation index:MSE, MAE, RMSE, MAPE and U.
 
 ## 6.[Result & Analysis](https://github.com/zsq96512/zsq96512-PHBS_TQFML-Project/blob/master/Conclusion%20%26%20Analysis.ipynb)
 * Support Vector Machines performs better than Artifial Neutral Network. There are several explanations for this result.<br>
