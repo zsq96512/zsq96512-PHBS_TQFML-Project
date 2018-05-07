@@ -37,7 +37,21 @@ To evaluate the performance of ANN method, this project selected several index i
 | MSE      | MAE      | RMSE     | MAPE     | U       |
 | :-----: | :-----: | :-----: | :-----: | :-----: |
 | 3.00945  | 17.468607| 1.734777 | 0.028269 | 0.971731|
-     
+
+#### 5.3.4 Result
+We can compare the predicted exchange rates from March 3oth, 2018 to April 10th, 2018 with the true exchange rates from two espects, the values and the direction of changes between two periods, and the result is shown below.
+
+| Date    | True exchange rate | direction of change | Predict result |
+| :-----: | :-----: | :-----: | :-----: |
+| 3.00945  | 17.468607| 1.734777 | 0.028269 | 0.971731|
+| 3.00945  | 17.468607| 1.734777 | 0.028269 | 0.971731|
+| 3.00945  | 17.468607| 1.734777 | 0.028269 | 0.971731|
+| 3.00945  | 17.468607| 1.734777 | 0.028269 | 0.971731|
+| 3.00945  | 17.468607| 1.734777 | 0.028269 | 0.971731|
+| 3.00945  | 17.468607| 1.734777 | 0.028269 | 0.971731|
+
+
+
 ## 6.Result & Analysis
 
 ## References
