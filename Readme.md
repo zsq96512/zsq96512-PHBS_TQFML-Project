@@ -46,8 +46,8 @@ This project collected the daily data of the exchange rate of JPY/USD (592 sampl
 (2)The windows period we use to find parameters is not optimal.
 
 * Future work of ANN:
-(1)Increase the number of the hidden layer and their neurons;
-(2)Improve the method of iniial weights setting;
+(1)Increase the number of the hidden layer and their neurons;<br>
+(2)Improve the method of iniial weights setting;<br>
 (2)Apply a useful empirical formula.
 
 ## References
