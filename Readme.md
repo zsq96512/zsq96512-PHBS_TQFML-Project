@@ -46,6 +46,11 @@ This project collected the daily data of the exchange rate of JPY/USD (592 sampl
 (2)For ANN it is difficult to control all the large number of parameters;<br>
 (3)For ANN it is difficult to obtain a stable solution.
 
+* Future work of ANN:
+(1)Increase the number of the hidden layer and their neurons;
+(2)Improve the method of iniial weights setting;
+(2)Apply a useful empirical formula.
+
 ## References
 
 [1] Galeshchuk, S. (2016). Neural networks performance in exchange rate prediction. Neurocomputing, 172(C), 446-452.
