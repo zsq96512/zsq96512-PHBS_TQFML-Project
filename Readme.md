@@ -41,10 +41,9 @@ This project collected the daily data of the exchange rate of JPY/USD (592 sampl
 * Evaluation index: MSE, MAE, RMSE, MAPE and U.
 
 ## 6.[Result & Analysis](https://github.com/zsq96512/zsq96512-PHBS_TQFML-Project/blob/master/Conclusion%20%26%20Analysis.ipynb)
-* Support Vector Machines performs better than Artifial Neutal Network. There are several explanations for this result.<br>
-(1)ANN tends to overfit the training set; <br>
-(2)For ANN it is difficult to control all the large number of parameters;<br>
-(3)For ANN it is difficult to obtain a stable solution.
+* Support Vector Machines performs worse than Artifial Neutal Network. There are several explanations for this result.<br>
+(1)Using grid search we didn't full check all the possible parameters.<br>
+(2)The windows period we use to find parameters is not optimal.
 
 * Future work of ANN:
 (1)Increase the number of the hidden layer and their neurons;
